@@ -3,7 +3,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 
 IF (MSVC)
     
-    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
+    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /LD")
     include_directories("C:/Program Files/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/include")
     find_package(sdl2 REQUIRED)
     add_definitions(-DBUILD_ENG)
