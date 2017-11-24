@@ -3,14 +3,14 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 
 IF (MSVC)
     
-    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /LD")
+    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /LDd")
     find_package(sdl2 REQUIRED)
     add_definitions(-DBUILD_ENG)
     add_library(eng SHARED eng.cpp)
     target_link_libraries(eng PRIVATE SDL2::SDL2 SDL2::SDL2main)
     link_directories("C:/projects/game/Debug")
     add_executable(main main.cpp)
-    #target_link_libraries(main eng)
+    target_link_libraries(main eng)
 
 ELSEIF (MINGW)   
     set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive")
