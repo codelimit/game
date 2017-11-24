@@ -44,6 +44,10 @@ after_build:
     - dir
     - cd C:/projects/game/Debug
     - dir
+    - cd C:/projects/game/eng.dir
+    - dir
+    - cd C:/projects/game/Win32
+    - dir
 
 artifacts:
   - path: Debug/main.exe
