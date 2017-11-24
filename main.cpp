@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
       if (btn == "QUIT") {
         running = false;
       }
-      std::cout << "Button pressed: " << btn << std::endl;
+      std::cout << "Button pressed: " << std::endl;
     }
   }
 
