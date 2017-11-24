@@ -11,7 +11,7 @@ IF (MSVC)
     target_link_libraries(eng PRIVATE SDL2::SDL2 SDL2::SDL2main)
     link_directories("C:/projects/game/Debug")
     add_executable(main main.cpp)
-    target_link_libraries(main eng)
+    target_link_libraries(main eng.dll)
 
 ELSEIF (MINGW)   
     set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive")
