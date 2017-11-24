@@ -9,6 +9,7 @@ IF (MSVC)
     add_definitions(-DBUILD_ENG)
     add_library(eng SHARED eng.cpp)
     target_link_libraries(eng PRIVATE SDL2::SDL2 SDL2::SDL2main)
+    link_directories("C:/projects/game/Debug")
     add_executable(main main.cpp)
     target_link_libraries(main eng)
 

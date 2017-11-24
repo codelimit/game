@@ -1,5 +1,6 @@
 #include "eng.h"
 #include <iostream>
+#include <string>
 
 int main(int argc, char *argv[]) {
 
@@ -18,7 +19,7 @@ int main(int argc, char *argv[]) {
       if (btn == "QUIT") {
         running = false;
       }
-      std::cout << "Button pressed: " << std::endl;
+      std::cout << "Button pressed: " << btn << std::endl;
     }
   }
 
