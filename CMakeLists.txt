@@ -3,7 +3,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 
 IF (MSVC)
     
-    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /LDd")
+ #   set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /LDd")
     find_package(sdl2 REQUIRED)
     add_definitions(-DBUILD_ENG)
     add_library(eng SHARED eng.cpp)
