@@ -51,6 +51,7 @@ after_build:
 
 artifacts:
   - path: Debug/main.exe
+  - path: Debug/eng.dll
   
 deploy:
    description: '$(APPVEYOR_REPO_TAG_NAME)'
