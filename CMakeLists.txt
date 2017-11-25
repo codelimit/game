@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 
 IF (MSVC)
-    
+    set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
     set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /LDd")
     find_package(sdl2 REQUIRED)
     add_definitions(-DBUILD_ENG)

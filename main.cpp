@@ -11,10 +11,13 @@ int main(int argc, char *argv[]) {
     running = false;
   }
 
-  uint32_t winId = drawWindow(640, 480);
+  uint32_t winId = initWindow(640, 480);
+  if (winId == 0) {
+    running = false;
+  }
 
   while (running) {
-    std::string btn = scanKeyboard();
+    std::string btn = getEvent();
     if (!btn.empty()) {
       if (btn == "QUIT") {
         running = false;

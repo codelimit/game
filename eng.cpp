@@ -20,7 +20,7 @@ bool initAll() {
   return true;
 }
 
-Uint32 drawWindow(int height, int width) {
+Uint32 initWindow(int height, int width) {
 
   SDL_Window *window;
   Uint32 id;
@@ -35,7 +35,7 @@ Uint32 drawWindow(int height, int width) {
   return id;
 }
 
-std::string scanKeyboard() {
+std::string getEvent() {
 
   SDL_Event event;
 

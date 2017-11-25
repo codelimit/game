@@ -15,9 +15,9 @@
 
 bool ENG initAll();
 
-unsigned int ENG drawWindow(int a, int b);
+unsigned int ENG initWindow(int a, int b);
 
-std::string ENG scanKeyboard();
+std::string ENG getEvent();
 
 void ENG shutDown(unsigned int);
 
