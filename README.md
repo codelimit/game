@@ -6,4 +6,4 @@ SDL 2.0 studying project.
 
 Linux (GCC): [![Build Status](https://travis-ci.org/codelimit/game.svg?branch=master)](https://travis-ci.org/codelimit/game)
 
-Windows (MSVC): 
+Windows (MSVC): [![Build status](https://ci.appveyor.com/api/projects/status/u297oxqt1wefppu6?svg=true)](https://ci.appveyor.com/project/codelimit/game)
