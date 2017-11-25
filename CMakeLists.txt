@@ -9,8 +9,8 @@ IF (MSVC)
     add_library(eng SHARED eng.cpp)
     target_link_libraries(eng PRIVATE SDL2::SDL2 SDL2::SDL2main)
 
-    #add_executable(main main.cpp)
-    #target_link_libraries(main ${ENG_LIB})
+    add_executable(main main.cpp)
+    target_link_libraries(main eng)
 
 ELSEIF (MINGW)   
     set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -lwinpthread -Wl,--no-whole-archive")
